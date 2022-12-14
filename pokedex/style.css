@@ -1,38 +1,137 @@
 @import url("https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700;800&display=swap");
 
-* {
+body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Oxanium", cursive;
-}
 
-body {
   text-align: center;
 
-  min-height: 100vh;
+  background-repeat: no-repeat;
 }
 
 main {
+  background-image: url(pokedex.png);
   display: inline-block;
   margin-top: 2%;
   padding: 0px;
   position: relative;
+  background-repeat: no-repeat;
+  width: 400px;
+}
+.boton {
+  width: 60px;
+  height: 60px;
+  background-color: #0febf7;
+  border-radius: 50%;
+  margin-right: 250px;
+  margin-top: 13px;
+  display: inline-block;
 }
 
 .pokemon__image {
   position: absolute;
-  bottom: 20%;
+  top: 220px;
   left: 50%;
   transform: translate(-63%, 20%);
-  height: 30%;
+  height: 100px;
 }
-
+#renderImg {
+  width: 66%;
+  height: 180px;
+  margin-top: 60px;
+  border-radius: 10px;
+}
+.pokemon__number {
+  position: absolute;
+  margin-left: 100px;
+}
 .pokemon__name {
   color: #3a444d;
   text-transform: capitalize;
+  margin-left: 150px;
+  position: absolute;
+  font-size: 15px;
+}
+.abilitys {
+  margin-top: 50px;
+  margin-left: 75px;
+  position: absolute;
+  font-size: 15px;
 }
 
+.pokemon__abilities {
+  color: #3a444d;
+  text-transform: capitalize;
+  margin-top: 50px;
+  position: absolute;
+  margin-left: 150px;
+  font-size: 15px;
+}
+.type {
+  margin-top: 180px;
+  margin-left: 85px;
+  position: absolute;
+  font-size: 15px;
+}
+.pokemon__type {
+  color: #3a444d;
+  text-transform: capitalize;
+  margin-top: 180px;
+  position: absolute;
+  margin-left: 150px;
+  font-size: 15px;
+}
+.stats {
+  margin-top: 260px;
+  margin-left: 85px;
+  position: absolute;
+  font-size: 15px;
+  text-align: start;
+}
+.pokemon__stats {
+  color: #3a444d;
+  text-transform: capitalize;
+  margin-top: 260px;
+  position: absolute;
+  margin-left: 150px;
+  font-size: 15px;
+}
 .c {
+  width: 200px;
+  height: 200px;
+  margin-left: 25%;
   color: #ff0000;
+  font-size: 50px;
+  position: absolute;
+}
+
+.button {
+  padding: 10px;
+  margin-bottom: 120px;
+  margin-top: 30px;
+  width: 100px;
+  box-shadow: -8px 5px rgb(68, 22, 22);
+
+  border-radius: 5px;
+
+  font-size: 10px;
+  font-weight: bolder;
+  text-decoration: double;
+  cursor: pointer;
+  transition: all 0.5s;
+  margin-left: 10px;
+}
+.button:hover {
+  background-color: rgb(204, 199, 199);
+  color: white;
+}
+.input__search {
+  margin-top: 100px;
+  padding: 10px;
+  width: 250px;
+  box-shadow: -8px 5px rgb(68, 22, 22);
+
+  border-radius: 5px;
 }

@@ -2,11 +2,14 @@ const pokemonName = document.querySelector(".pokemon__name")
 const pokemonNumber = document.querySelector(".pokemon__number")
 const pokemonImage = document.querySelector(".pokemon__image")
 let renderImg = document.getElementById("renderImg")
-
+const abilities = document.querySelector(".pokemon__abilities")
+const pokemonType = document.querySelector(".pokemon__type")
+const stats = document.querySelector(".pokemon__stats")
 const form = document.querySelector(".form")
 const input = document.querySelector(".input__search")
 const buttonPrev = document.querySelector(".btn-prev")
 const buttonNext = document.querySelector(".btn-next")
+const notFound = document.createElement("div")
 
 let image = [
   "pokemonDia.jpg",
@@ -17,12 +20,10 @@ let image = [
 
 let searchPokemon = 1
 const fetchPokemon = async (pokemon) => {
-  const APIResponse = await fetch(
-    `https://pokeapi.co/api/v2/pokemon/${pokemon}`
-  )
+  const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon}`)
 
-  if (APIResponse.status === 200) {
-    const data = await APIResponse.json()
+  if (response.status === 200) {
+    const data = await response.json()
     return data
   }
 }
@@ -34,12 +35,21 @@ const renderPokemon = async (pokemon) => {
   const data = await fetchPokemon(pokemon)
 
   let audio2 = new Audio("wrong.mp3")
-
+  let abilitys = data.abilities
+  let ability = abilitys.map((ability) => ability.ability.name).join(", ")
+  let typesOfPokemon = data.types
+  let statsOfPokemon = data.stats
   if (data) {
     pokemonImage.style.display = "block"
     pokemonName.innerHTML = data.name
     pokemonNumber.innerHTML = data.id
-    renderImg.src = image[2]
+    abilities.innerHTML = ability
+    pokemonType.innerHTML = typesOfPokemon
+      .map((type) => type.type.name)
+      .join(", ")
+    stats.innerHTML = statsOfPokemon.map((stat) => stat.stat.name).join(", ")
+    renderImg.src = image[Math.floor(Math.random() * image.length)]
+
     pokemonImage.src =
       data["sprites"]["versions"]["generation-v"]["black-white"]["animated"][
         "front_default"
@@ -49,10 +59,11 @@ const renderPokemon = async (pokemon) => {
     searchPokemon = data.id
   } else {
     pokemonImage.style.display = "none"
-    pokemonName.innerHTML = "<h1 class =c>Not found</h1> "
+    pokemonName.innerHTML = "<span class= c> not found</span>"
+    pokemonNumber.innerHTML = "0"
     audio2.play()
-    pokemonNumber.innerHTML = ""
   }
+  console.log(data)
 }
 
 form.addEventListener("submit", (event) => {
