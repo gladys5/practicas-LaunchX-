@@ -7,6 +7,7 @@
 }
 body {
   font-family: poppins;
+  /* background: #f4f4f7; */
 }
 
 .logo {
@@ -73,7 +74,7 @@ body {
   margin-left: 1em;
   color: rgb(18, 18, 92);
 }
-.select {
+.select-t {
   font-size: 1rem;
   font-weight: 400;
   margin-left: 5em;
@@ -327,4 +328,58 @@ legend {
     padding: 1em;
     display: none;
   }
+}
+.contenedor {
+  width: 90%;
+
+  padding: 40px 0;
+}
+.preparations-image {
+  width: 50%;
+  vertical-align: top;
+}
+.preparations {
+  width: 50%;
+  margin: auto;
+  position: absolute;
+  margin-left: 10%;
+  font-size: 30px;
+  color: rgb(18, 18, 92);
+  font-weight: bold;
+}
+.spanreparations-pharagraf {
+  width: 50%;
+  margin: auto;
+  position: absolute;
+  margin-left: 10%;
+  margin-top: 50px;
+  color: gray;
+}
+.selectBox {
+  width: 50%;
+  margin: auto;
+  position: absolute;
+  margin-left: 50%;
+  margin-top: -900px;
+}
+.select {
+  background-color: white;
+  width: 50%;
+
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 100px;
+  transition: 0.2s ease all;
+  padding: 30px;
+  position: relative;
+  box-shadow: -8px 5px #e7f3fc;
+}
+
+.contenidoTitulo {
+  color: rgb(18, 18, 92);
+}
+.fa-angle-down {
+  color: rgb(18, 18, 92);
 }

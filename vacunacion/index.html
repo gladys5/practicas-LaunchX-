@@ -1,153 +1,190 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
-  </head>
-  <body>
-    <nav class="menu">
-      <label class="logo">Vaccination</label>
+<html lang="es">
 
-      <a class="active" href="Database">Database</a>
-      <a href="Education">Education</a>
-      <a href="News">News</a>
-      <a href="Regulation">Regulation</a>
-      <a href="Hoax Buster">Hoax Buster</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Document</title>
+</head>
 
-      <span class="btn_menu" onclick="Showmenu()">
-        <i class="fa-sharp fa-solid fa-bars"></i>
-      </span>
-    </nav>
-    <section class="information">
-      <figure class="figure">
-        <img class="img" src="./images/vacunacion3.PNG" alt="vaccine" />
-      </figure>
-      <p class="triangulo"></p>
+<body>
+  <nav class="menu">
+    <label class="logo">Vaccination</label>
 
-      <p class="item">Fight Virus <br />With Vaccines</p>
+    <a class="active" href="Database">Database</a>
+    <a href="Education">Education</a>
+    <a href="News">News</a>
+    <a href="Regulation">Regulation</a>
+    <a href="Hoax Buster">Hoax Buster</a>
 
-      <br />
-      <p class="select">
-        let's stop this pandemic by killing the virus <br />width a
-        vaccine,don't let yourself and your <br />family get infected
+    <span class="btn_menu" onclick="Showmenu()">
+      <i class="fa-sharp fa-solid fa-bars"></i>
+    </span>
+  </nav>
+  <section class="information">
+    <figure class="figure">
+      <img class="img" src="./images/vacunacion3.PNG" alt="vaccine" />
+    </figure>
+    <p class="triangulo"></p>
+
+    <p class="item">Fight Virus <br />With Vaccines</p>
+
+    <br />
+    <p class="select-t">
+      let's stop this pandemic by killing the virus <br />width a
+      vaccine,don't let yourself and your <br />family get infected
+    </p>
+    <a href="best" class="item2"><i class="fa-sharp fa-solid fa-star"></i> Best protection<i
+        class="fa-sharp fa-solid fa-shield">
+      </i>Selected Vaccines
+    </a>
+
+    <a href="vaccines" class="item2"> </a>
+    <p class="triangulo2"></p>
+    <fieldset class="fieldset">
+      <legend>
+        <i class="fa-sharp fa-solid fa-clock"></i>
+        Schedule your Vaccinations <br />
+        <br />
+        <br />
+        <i class="fa-solid fa-location-dot"></i>
+        <select name="states" id="states" class="item3">
+          <option value="Ciudad Juarez">Ciudad Juarez</option>
+          <option value="Chihuahua">Chihuahua</option>
+          <option value="Delicias">Delicias</option>
+          <option value="Camargo">Camargo</option>
+        </select>
+
+        <input class="item3" type="date" name="date" />
+
+        <label class="item3" for="" name="Vaccination" value="Vaccination"></label>
+        <i class="fa-solid fa-syringe"></i>
+        <select name="vaccine" id="vaccine" class="item3">
+          <option value="AstraZeneca">AstraZeneca</option>
+          <option value="Sinovac">Sinovac</option>
+          <option value="Pfizer">Pfizer</option>
+          <option value="Moderna">Moderna</option>
+        </select>
+        <input class="item3 button" type="button" value="submit" />
+      </legend>
+    </fieldset>
+  </section>
+  <section class="marcas">
+    <img src="./images/astra.PNG" alt="" />
+    <img src="./images/sino.PNG" alt="" />
+    <img src="./images/Pfizer.PNG" alt="" />
+    <img src="./images/moder.PNG" alt="" />
+  </section>
+  <section class="Question">
+    <p class="paragraph">Why should I vaccine?</p>
+    <br />
+    <br />
+    <p class="paragraph1">
+      in order avoid any doubts getting the COVID-19 <br />
+      vaccine,identify the following 4 benefits of COVID-19 <br />
+      vaccination:
+    </p>
+  </section>
+  <section class="card-section">
+    <div class="cart">
+      <img src="./images/peoples.svg" alt="" />
+
+      <p class="title">
+        Minimize the <br />
+        spread of viruses
       </p>
-      <a href="best" class="item2"
-        ><i class="fa-sharp fa-solid fa-star"></i> Best protection<i
-          class="fa-sharp fa-solid fa-shield"
-        >
-        </i
-        >Selected Vaccines
-      </a>
-
-      <a href="vaccines" class="item2"> </a>
-      <p class="triangulo2"></p>
-      <fieldset class="fieldset">
-        <legend>
-          <i class="fa-sharp fa-solid fa-clock"></i>
-          Schedule your Vaccinations <br />
-          <br />
-          <br />
-          <i class="fa-solid fa-location-dot"></i>
-          <select name="states" id="states" class="item3">
-            <option value="Ciudad Juarez">Ciudad Juarez</option>
-            <option value="Chihuahua">Chihuahua</option>
-            <option value="Delicias">Delicias</option>
-            <option value="Camargo">Camargo</option>
-          </select>
-
-          <input class="item3" type="date" name="date" />
-
-          <label
-            class="item3"
-            for=""
-            name="Vaccination"
-            value="Vaccination"
-          ></label>
-          <i class="fa-solid fa-syringe"></i>
-          <select name="vaccine" id="vaccine" class="item3">
-            <option value="AstraZeneca">AstraZeneca</option>
-            <option value="Sinovac">Sinovac</option>
-            <option value="Pfizer">Pfizer</option>
-            <option value="Moderna">Moderna</option>
-          </select>
-          <input class="item3 button" type="button" value="submit" />
-        </legend>
-      </fieldset>
-    </section>
-    <section class="marcas">
-      <img src="./images/astra.PNG" alt="" />
-      <img src="./images/sino.PNG" alt="" />
-      <img src="./images/Pfizer.PNG" alt="" />
-      <img src="./images/moder.PNG" alt="" />
-    </section>
-    <section class="Question">
-      <p class="paragraph">Why should I vaccine?</p>
-      <br />
-      <br />
-      <p class="paragraph1">
-        in order avoid any doubts getting the COVID-19 <br />
-        vaccine,identify the following 4 benefits of COVID-19 <br />
-        vaccination:
+      <p class="paragraph-cart">
+        Vaccine has been proven effective to prevent someone from getting
+        infected With Coronavirus
       </p>
-    </section>
-    <section class="card-section">
-      <div class="cart">
-        <img src="./images/peoples.svg" alt="" />
+    </div>
+    <div class="cart">
+      <img src="./images/verified.svg" alt="" />
 
-        <p class="title">
-          Minimize the <br />
-          spread of viruses
-        </p>
-        <p class="paragraph-cart">
-          Vaccine has been proven effective to prevent someone from getting
-          infected With Coronavirus
-        </p>
-      </div>
-      <div class="cart">
-        <img src="./images/verified.svg" alt="" />
+      <p class="title">
+        Forming <br />
+        antibodies
+      </p>
+      <p class="paragraph-cart">
+        COVID-19 vaccine provent to help shape antibody response for immune
+        system
+      </p>
+    </div>
+    <div class="cart">
+      <img src="./images/peoples.svg" alt="" />
+      <p class="title">
+        Protecting <br />
+        people nearby
+      </p>
+      <p class="paragraph-cart">
+        The benefits of COVID-19 vaccination are the vaccine that we get can
+        also help protect people around us
+      </p>
+    </div>
+    <div class="cart">
+      <img src="./images/verified.svg" alt="" />
 
-        <p class="title">
-          Forming <br />
-          antibodies
-        </p>
-        <p class="paragraph-cart">
-          COVID-19 vaccine provent to help shape antibody response for immune
-          system
-        </p>
-      </div>
-      <div class="cart">
-        <img src="./images/peoples.svg" alt="" />
-        <p class="title">
-          Protecting <br />
-          people nearby
-        </p>
-        <p class="paragraph-cart">
-          The benefits of COVID-19 vaccination are the vaccine that we get can
-          also help protect people around us
-        </p>
-      </div>
-      <div class="cart">
-        <img src="./images/verified.svg" alt="" />
+      <p class="title">
+        Creating group <br />
+        immunity
+      </p>
+      <p class="paragraph-cart">
+        beneficial for Creating group inmunity or herd immunity
+      </p>
+    </div>
+  </section>
+  <section class="contenedor">
+    <img class="preparations-image" src="./images/vacination2.PNG" alt="">
+    <span class="preparations">Preparations Before Vaccine</span>
 
-        <p class="title">
-          Creating group <br />
-          immunity
-        </p>
-        <p class="paragraph-cart">
-          beneficial for Creating group inmunity or herd immunity
-        </p>
+    <span class="spanreparations-pharagraf">
+      the success of vaccines is strongly influenced by the <br>
+
+      strengh of the bodys immune system. Therefore,there are <br>
+
+      severeral things that can be tried to make the COVID-19 <br>
+      vaccine work
+    </span>
+
+    <form action="">
+
+
+      <div class="selectBox">
+        <div class="select" id="select">
+          <div class="contenido-select">
+            <h1 class="contenidoTitulo">Avoid stress</h1>
+            <p class="contenidoParrafo">Stress has a profound effect on immune work.
+              <br>
+              Morever,prologed stress can increase cortisol
+              <br>
+              production and oxidative stress in the body
+            </p>
+          </div>
+          <i class="fa-solid fa-angle-down"></i>
+        </div>
       </div>
-    </section>
-    <script src="script.js"></script>
-  </body>
+    </form>
+    <!-- <select name="" id="">
+      <option selected value="">avoid alcoholic berages</option>
+    </select>
+    <select>
+      <option selected value="">Avoid stress
+      <option>
+        <p>Stress has a profound effect on immune work.</p>
+        <br>
+        <p>Morever,prologed stress can increase cortisol</p>
+        <br>
+        <p>production and oxidative stress in the body</p>
+      </option>
+      </option>
+    </select> -->
+  </section>
+  <script src="script.js"></script>
+</body>
+
 </html>
